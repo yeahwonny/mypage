@@ -67,15 +67,17 @@
             width: 1200px;
             margin: 20px auto 20px auto;
         }
+
         .mypost {
             width: 500px;
             margin: 20px auto 20px auto;
             /* 바깥으로 여백 */
-            padding: 20px 20px 20px 20px; 
+            padding: 20px 20px 20px 20px;
             /* 안쪽으로 여백 */
             box-shadow: 0px 0px 3px 0px gray;
             /* 그림자 주는 거 3번째꺼가 그림자 길이 */
         }
+
         .mybtn {
             display: flex;
             flex-direction: row;
@@ -84,8 +86,9 @@
 
             margin-top: 20px;
             /* 코멘트 칸이랑 띄울 때 */
-        } 
-        .mybtn > button {
+        }
+
+        .mybtn>button {
             margin-right: 10px;
             /* 버튼끼리 서로 띄울 때 */
         }
@@ -101,6 +104,17 @@
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">영화URL</label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>-- 선택하기 --</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
         </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
